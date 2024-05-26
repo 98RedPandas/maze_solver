@@ -38,3 +38,15 @@ class Line:
 
     def draw(self, canvas, fill_color="black"):
         canvas.create_line(self.p1.x, self.p1.y, self.p2.x, self.p2.y, fill=fill_color, width = 2)
+
+class Cell:
+    def __init__(self, p1, p2, win, has_left_wall=True, has_right_wall=True, has_top_wall=True, has_bottom_wall=True):
+        self.has_left_wall = has_left_wall
+        self.has_right_wall = has_right_wall
+        self.has_top_wall = has_top_wall
+        self.has_bottom_wall = has_bottom_wall
+        self.p1 = p1
+        self.p2 = p2
+        
+
+        
